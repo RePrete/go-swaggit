@@ -1,0 +1,48 @@
+{
+  "schemes": [
+    "https"
+  ],
+  "swagger": "2.0",
+  "info": {
+    "description": "API description in Markdown.",
+    "title": "Sample API",
+    "version": "1.0.0"
+  },
+  "host": "petstore.swagger.io",
+  "basePath": "/v2",
+  "paths": {
+    "/pet/7574746": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "summary": "Returns a list of pet.",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "code": {
+                  "type": "number",
+                  "example": 1
+                },
+                "message": {
+                  "type": "string",
+                  "example": "Pet not found"
+                },
+                "type": {
+                  "type": "string",
+                  "example": "error"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
